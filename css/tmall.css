@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 404072 */
-  src: url('http://at.alicdn.com/t/font_404072_z1xu5yv52ob0rudi.eot');
-  src: url('http://at.alicdn.com/t/font_404072_z1xu5yv52ob0rudi.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_404072_z1xu5yv52ob0rudi.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_404072_z1xu5yv52ob0rudi.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_404072_z1xu5yv52ob0rudi.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_404072_rxhf7b4yu3t5u3di.eot');
+  src: url('http://at.alicdn.com/t/font_404072_rxhf7b4yu3t5u3di.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_404072_rxhf7b4yu3t5u3di.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_404072_rxhf7b4yu3t5u3di.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_404072_rxhf7b4yu3t5u3di.svg#iconfont') format('svg');
 }
 /*在线远程*/
 .iconfont{
@@ -40,6 +40,12 @@
 	margin-right:5px;
 	padding:0 10px;
 	line-height:32px;
+	color:#999;
+}
+.head-chinese a:hover{
+	color:#ff0036;
+}
+.head-chinese1 a:hover{
 	color:#999;
 }
 .head-chinese a{
@@ -105,6 +111,7 @@
 	font-size:14px;
 	line-height:36px;
 	float:left;
+	outline:none;
 }
 .nav-search-anniu{
 	width:132px;
@@ -116,6 +123,7 @@
 	line-height:36px;
 	letter-spacing:5px;
 	color:#fff;
+	outline:none;
 }
 .nav-sea-wenzi{
 	height:22px;
@@ -398,6 +406,36 @@
 .logo-box1{
 	margin-bottom:0;
 }
+.logo-box2{
+	width:121px;
+	height:108px;
+	float:left;
+	margin-right:1px;
+	background-color:#fff;
+}
+.logo-box2 a{
+	width:121px;
+	height:60px;
+	text-align:center;
+	color:#999;
+	display:block;
+	font-size:14px;
+	line-height:20px
+}
+.logo-box2 a i{
+	font-size:30px;
+	display:block;
+	margin-bottom:10px;
+	margin-top:29px;
+	transition: all 2s ease;
+}
+.logo-box2 a i:hover{
+	transform:rotate(360deg);
+}
+.logo-box2:hover{
+	background-color:red;
+}
+
 /*品牌集结束*/
 
 	/*潮流开始*/
@@ -1136,6 +1174,87 @@
 	height:30px;
 }
 
-
-
 	/*底部结束*/
+
+	/*侧边框开始*/
+#fixed-window{
+	width:35px;
+	height:653px;
+	background-color:#000;
+	position:fixed;
+	right:0;
+	top:0;
+}
+.cebox{
+	width:35px;
+	height:35px;
+	/*background-color: pink;*/
+	margin-top:95px;
+	margin-bottom:10px;
+}
+.cebox i{
+	color:#fff;
+	font-size:30px;
+	line-height:35px;
+}
+.cebox1{
+	width:25px;
+	height:98px;
+	font-size:14px;
+	color:#fff;
+	margin:0 auto;
+	/*background-color:yellow;*/
+	border-top:1px solid #444;
+	border-bottom:1px solid #444;
+}
+.cebox1 i{
+	color:#fff;
+	font-size:18px;
+	color:red;
+}
+.cebox2{
+	width:35px;
+	height:35px;
+	font-size:24px;
+	color:#fff;
+	line-height:35px;
+	text-align:center;
+	/*background-color:skyblue;*/
+	margin:8px 0;
+}
+.cebox2 i{
+	color:#fff;
+	font-size:24px;
+	line-height:35px;
+}
+.cebox3{
+	width:35px;
+	height:35px;
+	font-size:24px;
+	color:#fff;
+	line-height:35px;
+	text-align:center;
+	/*background-color:skyblue;*/
+	margin-top:76px;
+}
+.cebox3 i{
+	color:#fff;
+	font-size:24px;
+	line-height:35px;
+}
+.cebox:hover{
+	background-color:#FF0036;
+}
+.cebox1:hover{
+	background-color:#FF0036;
+}
+.cebox2:hover{
+	background-color:#FF0036;
+}
+.cebox3:hover{
+	background-color:#FF0036;
+}
+
+
+
+	/*侧边框结束*/
