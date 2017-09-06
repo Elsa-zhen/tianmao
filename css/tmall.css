@@ -227,6 +227,9 @@
 .banner-right-img:hover{
 	background-color:#fff;
 }
+.banner-right-img1:hover{
+	background-color:#fff;
+}
 .banner-right-img1{
 	width:220px;
 	height:235px;
@@ -1179,7 +1182,7 @@
 	/*侧边框开始*/
 #fixed-window{
 	width:35px;
-	height:653px;
+	height:100%;
 	background-color:#000;
 	position:fixed;
 	right:0;
@@ -1203,6 +1206,7 @@
 	font-size:14px;
 	color:#fff;
 	margin:0 auto;
+	text-align:center;
 	/*background-color:yellow;*/
 	border-top:1px solid #444;
 	border-bottom:1px solid #444;
