@@ -220,6 +220,9 @@
 	font-size:16px;
 	line-height:31px;
 }
+.banner-img-left h6:hover{
+	background-color:rgba(255,255,255,.9);
+}
 .banner-img-left h6 a{
 	color:#333;
 }
@@ -227,6 +230,55 @@
 	margin-right:8px;
 	color:#727171;
 	font-size:16px;
+}
+/*效果*/
+.banner-img-left h6:hover a{
+	color:#e54077;
+}
+.banner-img-left h6:nth-child(2):hover a{
+	color:#427def;
+}
+.banner-img-left h6:nth-child(3):hover a{
+	color:#6347ed;
+}
+.banner-img-left h6:nth-child(4):hover a{
+	color:#e54077;
+}
+.banner-img-left h6:nth-child(5):hover a{
+	color:#6347ed;
+}
+.banner-img-left h6:nth-child(6):hover a{
+	color:#427def;
+}
+.banner-img-left h6:nth-child(7):hover a{
+	color:#fa5c5c;
+}
+.banner-img-left h6:nth-child(8):hover a{
+	color:#f7ab31;
+}
+.banner-img-left h6:nth-child(9):hover a{
+	color:#f7a831;
+}
+.banner-img-left h6:nth-child(10):hover a{
+	color:#427def;
+}
+.banner-img-left h6:nth-child(11):hover a{
+	color:#dd2727;
+}
+.banner-img-left h6:nth-child(12):hover a{
+	color:#427def;
+}
+.banner-img-left h6:nth-child(13):hover a{
+	color:#f7a831;
+}
+.banner-img-left h6:nth-child(14):hover a{
+	color:#3bc7b1;
+}
+.banner-img-left h6:nth-child(15):hover a{
+	color:#dd2727;
+}
+.banner-img-left h6:nth-child(16):hover a{
+	color:#3bc7b1;
 }
 	/*banner隐藏栏*/
 .banner-img-left-left{

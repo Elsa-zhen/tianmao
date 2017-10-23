@@ -146,27 +146,53 @@ let obj;
 {
     let banner=document.querySelector("#banner");
     let leftObj=document.querySelector(".banner-img-left");
-    let listObj=document.querySelector(".banner-img-left-left");
+    let listObj=document.querySelectorAll(".banner-img-left-left");
     let lieObj=document.querySelectorAll(".banner-img-left h6");
     console.log(banner,leftObj,listObj,lieObj);
 
 
-    leftObj.onmouseover=function(){
-        listObj.style.display="block";
-    }
-    leftObj.onmouseout=function(){
-        listObj.style.display="none";
-    }
-    listObj.onmouseover=function(){
-        listObj.style.display="block";
-    }
-    listObj.onmouseout=function(){
-        listObj.style.display="none";
-    }
-    banner.onmouseleave=function(){
-        listObj.style.display="none";
-    }
+    // leftObj.onmouseover=function(){
+    //     listObj.style.display="block";
+    // }
+    // leftObj.onmouseout=function(){
+    //     listObj.style.display="none";
+    // }
+    // listObj.onmouseover=function(){
+    //     listObj.style.display="block";
+    // }
+    // listObj.onmouseout=function(){
+    //     listObj.style.display="none";
+    // }
+    // banner.onmouseleave=function(){
+    //     listObj.style.display="none";
+    // }
+    lieObj.forEach(function(val,index){
+        val.onmouseover=function(){
+            for(let i=0;i<lieObj.length;i++){
+                listObj[i].style.display="none";
+            }
+            listObj[index].style.display="block";
+        };
 
+
+        val.onmouseout=function(e){
+            e.stopPropagation();
+        };
+        listObj[index].onmouseover=function(){
+            listObj[index].style.display="block";
+        }
+        listObj[index].onmouseout=function(){
+            listObj[index].style.display="none";
+        }
+
+
+        banner.onmouseleave=function(){
+            for(let i=0;i<listObj.length;i++){
+                listObj[index].style.display="none";
+            }
+
+        }
+    })
 
 
 
