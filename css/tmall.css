@@ -201,6 +201,7 @@
 .banner-img li a img{
 	display:block;
 }
+	/*左侧菜单栏*/
 .banner-img-left{
 	width:200px;
 	height:500px;
@@ -227,6 +228,98 @@
 	color:#727171;
 	font-size:16px;
 }
+	/*banner隐藏栏*/
+.banner-img-left-left{
+	width:852px;
+	height:500px;
+	position:absolute;
+	left:200px;
+	top:36px;
+	z-index:9999;
+	background:#fff;
+	display:none;
+}
+/*ul列表*/
+.yc-nr-left{
+	width:583px;
+	height:462px;
+	margin:19px 30px;
+	float:left;
+	overflow:hidden;
+	background:#fff;
+}
+/*li表*/
+.yc-nr-left-list{
+	width:100%;
+}
+.yc-nr-list-left{
+	margin-top:10.5px;
+	height:44px;
+	float:left;
+}
+.yc-nr-list-left h5{
+	width:60px;
+	display:inline-block;
+	line-height:22px;
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+}
+.yc-nr-list-left i{
+	display:inline-block;
+	line-height:22px;
+	color:#333;
+	font-size:14px;
+}
+.yc-nr-list-right{
+	width:493px;
+	float:left;
+}
+.yc-nr-list-right a{
+	display:block;
+	height:22px;
+	line-height:22px;
+	font-size:14px;
+	color:#666;
+	float:left;
+	margin-left:13px;
+}
+.xu-xian{
+	width:495px;
+	height:10.5px;
+	margin-bottom:10.5px;
+	float:right;
+	border-bottom:1px #ccc dashed;
+}
+.yc-nr-list-right a.te{
+	color:#e54077;
+}
+/*logo*/
+.yc-nr-right{
+	width:209px;
+	height:500px;
+	padding:10px;
+	box-sizing:border-box;
+	float:left;
+	background:#fafafa;
+}
+.yc-nr-right-logo{
+	width:73px;
+	height:37px;
+	padding:5px 10px;
+	margin:0 1px 1px 0;
+	float:left;
+	background:#fff;
+}
+.yc-nr-right-logo a{
+	display:block;
+}
+.yc-nr-right-logo a img{
+	width:100%;
+	height:100%;
+}
+
+
 .banner-right-img{
 	width:220px;
 	height:235px;
@@ -1456,7 +1549,10 @@
 	/*左侧边框——楼层跳转*/
 
 	/*返回顶部*/
-.totop{
+.leftbar-totop{
 	transition:all 1s;
-	opacity:1;
+}
+.cebox2-totop{
+	transition:all 1s;
+	opacity:0;
 }
