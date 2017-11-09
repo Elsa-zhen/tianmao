@@ -148,24 +148,8 @@ let obj;
     let leftObj=document.querySelector(".banner-img-left");
     let listObj=document.querySelectorAll(".banner-img-left-left");
     let lieObj=document.querySelectorAll(".banner-img-left h6");
-    console.log(banner,leftObj,listObj,lieObj);
+    // console.log(banner,leftObj,listObj,lieObj);
 
-
-    // leftObj.onmouseover=function(){
-    //     listObj.style.display="block";
-    // }
-    // leftObj.onmouseout=function(){
-    //     listObj.style.display="none";
-    // }
-    // listObj.onmouseover=function(){
-    //     listObj.style.display="block";
-    // }
-    // listObj.onmouseout=function(){
-    //     listObj.style.display="none";
-    // }
-    // banner.onmouseleave=function(){
-    //     listObj.style.display="none";
-    // }
     lieObj.forEach(function(val,index){
         val.onmouseover=function(){
             for(let i=0;i<lieObj.length;i++){
@@ -190,11 +174,51 @@ let obj;
             for(let i=0;i<listObj.length;i++){
                 listObj[index].style.display="none";
             }
-
         }
+    });
+}
+
+//头部下拉
+{
+    let pull=document.querySelectorAll(".pull-down");
+    let name=document.querySelectorAll(".name-a");
+
+        name.forEach(function(ele,index){
+            ele.onmouseenter=function(){
+                for(let i=0;i<name.length;i++){
+                    pull[i].style.display="none";
+                }
+                pull[index].style.display="block";
+            };
+            ele.onmouseleave=function(){
+                pull[index].style.display="none";
+            }
+            pull[index].onmouseenter=function(){
+                pull[index].style.display="block";
+            }
+            pull[index].onmouseleave=function(){
+                pull[index].style.display="none";
+            }
+        });
+
+}
+
+//右侧动画
+{
+    // let rightbox=document.querySelectorAll(".right-cebox");
+    // console.log(rightbox);
+    $('.right-cebox').hover(function(){
+        $(this)
+            .css('background','#FF0036')
+            .find('.member')
+            .show()
+            .animate({opacity:1,left:-90})
+    },function(){
+        $(this)
+            .css('background','')
+            .find('.member')
+            .animate({opacity:0.5,left:-150},function(){
+                return $(this).hide()
+            })
     })
-
-
-
-
 }

@@ -39,6 +39,7 @@
 	padding:0 10px;
 	line-height:32px;
 	color:#999;
+	position:relative;
 }
 .head-chinese a:hover{
 	color:#ff0036;
@@ -61,6 +62,45 @@
 	color:#ff0036;
 	font-size:12px;
 	line-height:32px;
+}
+/*下拉*/
+.pull-down{
+	width:74px;
+	height:auto;
+	padding:8px 10px;
+	border:1px solid #eee;
+	background:#fafafa;
+	position:absolute;
+	left:0;
+	top:33px;
+	z-index:977;
+	display:none;
+}
+.pull-down a{
+	display:block;
+	color:#999;
+	padding:5px 0;
+	text-align:center;
+	line-height:16px;
+	font-size:12px;
+}
+.pull-down1{
+	width:64px;
+}
+.pull-down2{
+	 width:175px;
+	 height:227px;
+ }
+.pull-down3{
+	width:122px;
+	height:auto;
+}
+.pull-down4{
+	width:1198px;
+	height:auto;
+	position: absolute;
+	left:auto;
+	right:0;
 }
 	/*头部结束*/
 
@@ -281,7 +321,7 @@
 	color:#3bc7b1;
 }
 	/*banner隐藏栏*/
-.banner-img-left-left{
+.banner-img-left-left{		/*最大的盒子*/
 	width:852px;
 	height:500px;
 	position:absolute;
@@ -292,7 +332,7 @@
 	display:none;
 }
 /*ul列表*/
-.yc-nr-left{
+.yc-nr-left{		/*里面的每一个ul大盒子*/
 	width:583px;
 	height:462px;
 	margin:19px 30px;
@@ -787,7 +827,7 @@
  	/*广告*/
 
  	/*美丽人生开始*/
-#beauty{
+.beauty{
 	width:1230px;
 	height:470px;
 	margin:0 auto;
@@ -807,7 +847,7 @@
 	width:5px;
 	height:20px;
 	float:left;
-	margin-top:;
+	/*margin-top:;*/
 	background-color:#EA5F89;
 }
 .beauty-top-left h5{
@@ -989,7 +1029,7 @@
 	width:5px;
 	height:20px;
 	float:left;
-	margin-top:;
+	/*margin-top:;*/
 	background-color:#0AA6E8;
 }
 .play-top-left h5{
@@ -1454,11 +1494,25 @@
 	height:35px;
 	margin-top:95px;
 	margin-bottom:10px;
+	position:relative;
 }
 .cebox i{
 	color:#fff;
 	font-size:30px;
 	line-height:35px;
+}
+.member{
+	width:90px;
+	height:35px;
+	background:#494949;
+	color:#fff;
+	line-height:35px;
+	text-align:center;
+	font-size:12px;
+	position:absolute;
+	top:0;
+	left:-150px;
+	opacity:0;
 }
 .cebox1{
 	width:25px;
@@ -1471,7 +1525,6 @@
 	border-bottom:1px solid #444;
 }
 .cebox1 i{
-	color:#fff;
 	font-size:18px;
 	color:red;
 }
@@ -1483,6 +1536,7 @@
 	line-height:35px;
 	text-align:center;
 	margin:8px 0;
+	position:relative;
 }
 .cebox2 i{
 	color:#fff;
@@ -1497,24 +1551,25 @@
 	line-height:35px;
 	text-align:center;
 	margin-top:76px;
+	position: relative;
 }
 .cebox3 i{
 	color:#fff;
 	font-size:24px;
 	line-height:35px;
 }
-.cebox:hover{
-	background-color:#FF0036;
-}
-.cebox1:hover{
-	background-color:#FF0036;
-}
-.cebox2:hover{
-	background-color:#FF0036;
-}
-.cebox3:hover{
-	background-color:#FF0036;
-}
+/*.cebox:hover{*/
+	/*background-color:#FF0036;*/
+/*}*/
+/*.cebox1:hover{*/
+	/*background-color:#FF0036;*/
+/*}*/
+/*.cebox2:hover{*/
+	/*background-color:#FF0036;*/
+/*}*/
+/*.cebox3:hover{*/
+	/*background-color:#FF0036;*/
+/*}*/
 	/*侧边框结束*/
 
 	/*左侧边框——楼层跳转*/
